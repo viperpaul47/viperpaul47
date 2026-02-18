@@ -18,3 +18,16 @@
             color: #007bff; 
             font-weight: bold; 
 }
+.dark-mode { 
+    background-color: #1a1a1a;
+    color: #fff; 
+}
+
+.dark-mode .card { 
+    background-color: #333;
+    color: white; 
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+.dark-mode h1 { color: #fff;
+}

@@ -10,6 +10,9 @@
         <p>The weather says: <strong>{{ weather_status }}</strong></p>
         <p>You should wear:</p>
         <p class="suggestion">{{ outfit }}</p>
+        <button id="theme-switch">Toggle</button>
     </div>
+    <link rel="stylesheet" href="{{ url_for('static', filename='frontendstyle.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
