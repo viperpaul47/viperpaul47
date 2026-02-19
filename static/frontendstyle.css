@@ -8,7 +8,8 @@
             background: white; 
             padding: 20px; 
             border-radius: 10px; display: inline-block; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: right;
 }
      h1 { 
             color: #333; 
@@ -18,16 +19,16 @@
             color: #007bff; 
             font-weight: bold; 
 }
-.dark-mode { 
+    .dark-mode { 
     background-color: #1a1a1a;
     color: #fff; 
 }
 
-.dark-mode .card { 
+    .dark-mode .card { 
     background-color: #333;
     color: white; 
     box-shadow: 0 4px 8px rgba(255,255,255,0.1);
 }
 
-.dark-mode h1 { color: #fff;
+    .dark-mode h1 { color: #fff;
 }
