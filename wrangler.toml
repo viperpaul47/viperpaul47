@@ -1,0 +1,32 @@
+name = "viperprojects47"
+main = "src/index.js"
+compatibility_date = "2026-03-15"
+
+[assets]
+directory = "./static"
+binding = "ASSETS"
+
+# --- PRODUCTION (Default) ---
+[[routes]]
+pattern = "viperprojects47.com"
+custom_domain = true
+
+[[routes]]
+pattern = "www.viperprojects47.com"
+custom_domain = true
+
+[[kv_namespaces]]
+binding = "EMAILS"
+id = "12dbc74d46ce4d7eb62fd8672f542047"
+
+# --- DEVELOPMENT (Dev Environment) ---
+[env.dev]
+name = "viperprojects47-dev"
+
+[[env.dev.routes]]
+pattern = "dev.viperprojects47.com"
+custom_domain = true
+
+[[env.dev.kv_namespaces]]
+binding = "EMAILS"
+id = "12dbc74d46ce4d7eb62fd8672f542047"

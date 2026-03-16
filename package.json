@@ -1,0 +1,23 @@
+{
+  "name": "viperojects47",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viperpaul47/vprojects47.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viperpaul47/vprojects47/issues"
+  },
+  "homepage": "https://github.com/viperpaul47/vprojects47#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260313.1"
+  }
+}
