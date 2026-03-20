@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viper Projects | Lunar Edition</title>
+    <title>Viper Projects | Lunar    Edition</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
     <style>
         :root { 
@@ -163,30 +163,39 @@
     </div>
 
     <script>
-        document.getElementById('emailForm').onsubmit = async (e) => {
-            e.preventDefault();
-            const email = document.getElementById('emailInput').value;
-            const msg = document.getElementById('msg');
+    document.getElementById('emailForm').onsubmit = async (e) => {
+        e.preventDefault();
+        const emailInput = document.getElementById('emailInput');
+        const email = emailInput.value;
+        const msg = document.getElementById('msg');
+        const container = document.querySelector('.container');
+        
+        msg.innerText = "SENDING REQUEST...";
+        
+        try {
+            const res = await fetch('/api/notify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            });
             
-            msg.innerText = "Processing...";
-            
-            try {
-                const res = await fetch('/api/notify', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email })
-                });
-                
-                if (res.ok) {
-                    msg.innerText = "You're on the list!";
-                    document.getElementById('emailInput').value = "";
-                } else {
-                    msg.innerText = "Something went wrong. Try again.";
-                }
-            } catch (err) {
-                msg.innerText = "Error connecting to server.";
+            if (res.ok) {
+                container.innerHTML = `
+                    <p style="color: #F6F1D5; font-family: monospace; letter-spacing: 2px; font-size: 1.1rem; text-transform: uppercase;">
+                        Request Received.
+                    </p>
+                    <p style="margin-top: 15px; opacity: 0.5; font-size: 0.8rem; font-family: monospace;">
+                        We will notify you of further updates.
+                    </p>
+                `;
+            } else {
+                msg.innerText = "ERROR: REQUEST FAILED.";
             }
-        };
-    </script>
+        } catch (err) {
+            msg.innerText = "SYSTEM OFFLINE.";
+            console.error(err);
+        }
+    };
+</script>
 </body>
 </html>
