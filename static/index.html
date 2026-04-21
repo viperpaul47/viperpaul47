@@ -3,145 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viper Projects | Lunar    Edition</title>
+    <title>Vprojects47 | version 1.1</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
-    <style>
-        :root { 
-            --moonlight: #F6F1D5; 
-            --void: #020617; 
-            --starlight: #D1D5DB; 
-        }
-        
-        body { 
-            background: var(--void); 
-            background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-            background-size: 30px 30px;
-            color: var(--starlight); 
-            font-family: 'Inter', sans-serif; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            min-height: 100vh; 
-            margin: 0; 
-            overflow: hidden; 
-        }
-
-        .moon-glow {
-            position: absolute;
-            top: 15%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(246, 241, 213, 0.08) 0%, rgba(2, 6, 23, 0) 70%);
-            filter: blur(50px);
-            z-index: 0;
-        }
-
-        .container { 
-            position: relative;
-            text-align: center; 
-            z-index: 1; 
-            width: 100%; 
-            max-width: 450px; 
-            padding: 20px; 
-        }
-
-        h1 { 
-            font-family: 'Space Grotesk'; 
-            font-size: clamp(2.5rem, 8vw, 4rem); 
-            color: var(--moonlight); 
-            margin-bottom: 10px; 
-            letter-spacing: -0.04em;
-        }
-
-        p.tagline { 
-            font-weight: 300; 
-            letter-spacing: 0.1em; 
-            opacity: 0.8;
-        }
-
-        .notify-box { 
-            margin-top: 40px; 
-            display: flex; 
-            gap: 10px; 
-            background: rgba(255,255,255,0.03);
-            padding: 8px;
-            border-radius: 12px;
-            border: 1px solid rgba(246,241,213,0.1);
-        }
-
-        input { 
-            background: transparent; 
-            border: none; 
-            padding: 12px; 
-            color: white; 
-            flex-grow: 1; 
-            outline: none; 
-            font-family: 'Inter';
-                font-size: 16px; 
-        }
-
-        button { 
-            background: var(--moonlight); 
-            color: var(--void); 
-            border: none; 
-            padding: 12px 24px; 
-            border-radius: 8px; 
-            font-weight: 600; 
-            cursor: pointer; 
-            transition: transform 0.2s;
-        }
-
-        button:hover { transform: scale(1.05); }
-
-        .social-links {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: flex;
-            gap: 20px;
-            z-index: 10;
-            background: rgba(2, 6, 23, 0.7); 
-            backdrop-filter: blur(12px);
-            padding: 12px 20px;
-            border-radius: 100px;
-        }
-
-        .social-icon {
-            color: var(--starlight);
-            opacity: 0.6;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-        }
-
-        .social-icon svg { width: 22px; height: 22px; fill: currentColor; }
-
-        .social-icon:hover {
-            opacity: 1;
-            transform: translateY(-4px);
-        }
-
-        .social-icon.linkedin:hover { color: #0077B5; }
-        .social-icon.twitter:hover  { color: #FFFFFF; }
-        .social-icon.instagram:hover { color: #E4405F; }
-
-        @media (max-width: 480px) {
-            .social-links {
-                bottom: 25px;
-                right: 50%;
-                transform: translateX(50%); 
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="cascade.css">
 </head>
 <body>
     <div class="moon-glow"></div>
     
     <div class="container">
         <h1>viperprojects47</h1>
-        <p class="tagline">The digital standard is arriving .</p>
+        <p class="tagline">The digital standard is arriving.</p>
         
         <form class="notify-box" id="emailForm">
             <input type="email" id="emailInput" placeholder="Enter your email" required>
