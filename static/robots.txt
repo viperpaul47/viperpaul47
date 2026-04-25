@@ -1,0 +1,101 @@
+# Notice: The use of robots or other automated means to access viperprojects47 without
+# the express permission of viperprojects47 is strictly prohibited.
+# See https://www.viperprojects47.com/agrement.html
+# 
+# viperprojects47 may, in its discretion, permit certain automated access to certain 
+# viperprojects47 pages for the limited purpose of including content in approved 
+# publicly available search engines.
+# 
+# If you would like to apply for permission to crawl viperprojects47, 
+# please email paul@viperprojects47.com.
+# 
+# Any and all permitted crawling of viperprojects47 is subject to 
+# viperprojects47's Crawling Terms and Conditions.
+# See https://www.viperprojects47.com/legal/crawling-terms.
+
+# ==========================================================
+# AI CRAWLER BLOCKLIST (Updated 2026)
+# ==========================================================
+
+# 1. Google (Gemini, Vertex AI, and AI Overviews)
+User-agent: Google-Extended
+Disallow: /
+User-agent: Google-CloudVertexBot
+Disallow: /
+User-agent: Google-NotebookLM
+Disallow: /
+
+# 2. OpenAI (ChatGPT training and search)
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+
+# 3. Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-User
+Disallow: /
+User-agent: Claude-SearchBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+
+# 4. Meta (Meta AI / Llama training)
+User-agent: FacebookBot
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+# 5. Major Datasets and Scrapers (Common Crawl, etc.)
+User-agent: CCBot
+Disallow: /
+User-agent: img2dataset
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+
+# 6. AI Search Engines (Perplexity, Apple, etc.)
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity-User
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: YouBot
+Disallow: /
+
+# 7. Other AI Agents (ByteDance, Mistral, DeepSeek, etc.)
+User-agent: Bytespider
+Disallow: /
+User-agent: TikTokSpider
+Disallow: /
+User-agent: MistralAI-User
+Disallow: /
+User-agent: Cohere-ai
+Disallow: /
+User-agent: iAskBot
+Disallow: /
+User-agent: DeepSeekBot
+Disallow: /
+
+# ==========================================================
+# STANDARD SEARCH ENGINES (SEO)
+# ==========================================================
+
+# Allow standard search engines for visibility
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
