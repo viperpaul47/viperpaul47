@@ -1,5 +1,5 @@
 name = "viperprojects47"
-main = "src/index.js"
+main = "src/brain.js"
 compatibility_date = "2026-03-15"
 
 [assets]
