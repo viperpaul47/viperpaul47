@@ -119,6 +119,25 @@
         .social-icon.twitter:hover  { color: #FFFFFF; }
         .social-icon.instagram:hover { color: #E4405F; }
 
+        .legal-body {
+            background: #000;
+            color: #fff;
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: auto;
+        }
+
+        .legal-container {
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .legal-title {
+            color: #d4af37;
+            font-weight: 600;
+        }
+
         @media (max-width: 480px) {
         .social-links {
             bottom: 25px;

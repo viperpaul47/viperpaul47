@@ -1,6 +1,6 @@
 # Notice: The use of robots or other automated means to access viperprojects47 without
 # the express permission of viperprojects47 is strictly prohibited.
-# See https://www.viperprojects47.com/agrement.html
+# See https://www.viperprojects47.com/legal/agreement.html
 # 
 # viperprojects47 may, in its discretion, permit certain automated access to certain 
 # viperprojects47 pages for the limited purpose of including content in approved 
@@ -8,14 +8,6 @@
 # 
 # If you would like to apply for permission to crawl viperprojects47, 
 # please email paul@viperprojects47.com.
-# 
-# Any and all permitted crawling of viperprojects47 is subject to 
-# viperprojects47's Crawling Terms and Conditions.
-# See https://www.viperprojects47.com/legal/crawling-terms.
-
-# ==========================================================
-# AI CRAWLER BLOCKLIST (Updated 2026)
-# ==========================================================
 
 # 1. Google (Gemini, Vertex AI, and AI Overviews)
 User-agent: Google-Extended
