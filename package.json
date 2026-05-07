@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/viperpaul47/vprojects47/issues"
   },
-  "homepage": "https://github.com/viperpaul47/vprojects47#readme",
+  "homepage": "https://github.com/viperpaul47/vprojects47",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260313.1"
   }
