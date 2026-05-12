@@ -1,1 +1,2 @@
-This is our production HOME page repo and this has pipelined for deployment please confirm paul@viperprojects47.com before making any changes.
+[!IMPORTANT]
+Production Repository: This repository is pipelined for live deployment to viperprojects47.com. Please contact paul@viperprojects47.com for authorization before submitting Pull Requests or making changes.
